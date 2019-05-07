@@ -173,18 +173,7 @@ def team_names
 end
 
 def player_numbers(team_name)
-  array = []
   game_hash.each do |location, attribute|
-    if game_hash[location].values.include?(team_name)
-
-    attribute.each do |attribute, info|
-binding.pry
-    if attribute == team_name
-
-       array << info
-      end
-     end
-    end
+    binding.pry
   end
- return array
 end
