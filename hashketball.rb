@@ -192,10 +192,11 @@ def player_stats(player_name)
     attributes[:players].each do |stats|
 
       if stats[:player_name] == player_name
-        binding.pry
+
         stats_hash << stats
     end
   end
  end
  return stats_hash
+ binding.pry
 end
