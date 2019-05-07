@@ -191,5 +191,6 @@ def player_stats(player_name)
 
     attributes[:players].each do |stats|
       binding.pry
+    end 
   end
 end
