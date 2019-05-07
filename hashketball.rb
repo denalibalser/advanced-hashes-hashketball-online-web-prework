@@ -196,4 +196,5 @@ def player_stats(player_name)
         stats_hash <<
     end
   end
+ end
 end
