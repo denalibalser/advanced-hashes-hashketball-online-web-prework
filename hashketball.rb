@@ -181,10 +181,10 @@ def player_numbers(team_name)
       attributes.each do |player, stat|
         if stat == :number
           numbers_hash << stat
-    
+
       end
     end
    end
   end
-  numbers_hash
+  return numbers_hash.sort
 end
