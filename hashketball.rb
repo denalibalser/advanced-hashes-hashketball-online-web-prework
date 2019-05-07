@@ -172,23 +172,16 @@ def team_names
   return array
 end
 
-def player_numbers(team_name)
-  hash = game_hash
-  array = []
-  hash.each do |location, attributes|
-    if hash[location].values.include?(team_name)
-      attributes.each do |attribute, info|
-        if info.class == Hash
-          info.each do |player, stats|
-            stats.each do |stat, int|
-              if stat == :number
-                array << int.to_i
-              end
-            end
-          end
-        end
+def players_numbers(name_of_team)
+
+  numbers = []
+  game_hash.each do |team, chars|
+    if name_of_team == game_hash[team][:team_name]
+      game_hash[team][:players].each do |name, stats|
+        numbers.push(stats[:number])
       end
     end
   end
-  return array
+  return numbers
+
 end
