@@ -195,7 +195,7 @@ def player_stats(player_name)
 
         stats.delete(:player_name)
 
-        stats
+        return stats
         #binding.pry
 
     end
