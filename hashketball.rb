@@ -178,8 +178,10 @@ def player_numbers(team_name)
   game_hash.each do |location, attributes|
 
     if attributes[:team_name] == team_name
-      binding.pry
-      attributes.each do |player, stat|
+
+
+      attributes[:players].each do |player, stat|
+        binding.pry
         if stat == :number
           numbers_hash << stat
 
