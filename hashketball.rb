@@ -177,5 +177,7 @@ def player_numbers(team_name)
     attribute.each do |attribute, info|
       if  attribute == :team_name
         return info
+   end
   end
+ end
 end
