@@ -182,8 +182,8 @@ def player_numbers(team_name)
 
       attributes[:players].each do |player|
         binding.pry
-        numbers_array << player[:number] 
-          
+        numbers_array << player[:number]
+
 
       
     end
