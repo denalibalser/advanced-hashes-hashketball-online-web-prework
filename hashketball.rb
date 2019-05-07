@@ -185,19 +185,11 @@ def player_numbers(team_name)
 end
 
 def player_stats(player_name)
-  #stats_hash = {}
   game_hash.each do |location, attributes|
-
     attributes[:players].each do |stats|
-
       if stats[:player_name] == player_name
-
-
         stats.delete(:player_name)
-
         return stats
-        #binding.pry
-
     end
   end
  end
