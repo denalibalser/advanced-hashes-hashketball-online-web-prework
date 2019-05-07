@@ -189,5 +189,5 @@ def player_numbers(team_name)
     end
    end
   end
-  return numbers_hash.sort
+  return numbers_array.sort
 end
