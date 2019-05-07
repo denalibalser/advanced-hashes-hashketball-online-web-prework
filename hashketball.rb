@@ -198,7 +198,7 @@ end
 def big_shoe_rebounds
   game_hash.each do |location, attributes|
     attributes[:players].each do |stats|
-      if stats[:shoe].size > #how to refer to all shoe sizes for all players?
+      if stats[:shoe].size > #how to refer to all shoe sizes for all players? AND what method to use on [:shoe] to find the largest size
         return stats[:rebounds]
     binding.pry
    end
