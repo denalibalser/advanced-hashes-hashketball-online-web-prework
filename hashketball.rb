@@ -180,7 +180,7 @@ def player_numbers(team_name)
     if attributes[:team_name] == team_name
 
 
-      attributes[:players].each do |player, stat|
+      attributes[:players].each do |player|
         binding.pry
         if stat == :number
           numbers_hash << stat
