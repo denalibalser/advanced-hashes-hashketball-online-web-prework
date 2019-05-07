@@ -173,7 +173,7 @@ def team_names
 end
 
 def player_numbers(team_name)
-  numbers_hash = {}
+  numbers_array = []
 
   game_hash.each do |location, attributes|
 
@@ -182,10 +182,10 @@ def player_numbers(team_name)
 
       attributes[:players].each do |player|
         binding.pry
-        if stat == :number
-          numbers_hash << stat
+        numbers_array << player[:number] 
+          
 
-      end
+      
     end
    end
   end
