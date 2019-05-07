@@ -175,7 +175,7 @@ end
 def player_numbers(team_name)
   game_hash.each do |location, attribute|
     attribute.each do |attribute, info|
-      if  attribute == :team_name
+      if  attribute == team_name
         return info
    end
   end
