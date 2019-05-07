@@ -184,3 +184,9 @@ def player_numbers(team_name)
   end
   return numbers_array.sort
 end
+
+def player_stats(player_name)
+  stats_hash = {}
+  game_hash.each do |location, attributes|
+  end
+end
