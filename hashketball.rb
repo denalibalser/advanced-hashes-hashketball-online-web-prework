@@ -194,7 +194,6 @@ def player_stats(player_name)
       if stats[:player_name] == player_name
         binding.pry
         stats_hash << stats
-
     end
   end
  end
