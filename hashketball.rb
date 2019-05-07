@@ -188,5 +188,6 @@ end
 def player_stats(player_name)
   stats_hash = {}
   game_hash.each do |location, attributes|
+    binding.pry
   end
 end
