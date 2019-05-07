@@ -196,7 +196,7 @@ def player_stats(player_name)
         [:player_name].delete()
 
         stats_hash[stats]
-        
+
 
     end
   end
